@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="so">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111522">
+    <title>Xisaabiye</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <main class="calculator" aria-label="Xisaabiye">
+      <header class="calculator__header">
+        <div>
+          <p class="eyebrow">Xisaab fudud</p>
+          <h1>Xisaabiye</h1>
+        </div>
+        <span class="calculator__badge" aria-hidden="true">±</span>
+      </header>
+
+      <section class="display" aria-label="Shaashadda natiijada" aria-live="polite" aria-atomic="true">
+        <p class="display__expression" data-expression>&nbsp;</p>
+        <p class="display__value" data-display>0</p>
+      </section>
+
+      <section class="keypad" aria-label="Badhamada xisaabiyaha">
+        <button class="key key--utility" type="button" data-action="clear" aria-label="Nadiifi dhammaan">AC</button>
+        <button class="key key--utility" type="button" data-action="sign" aria-label="Beddel calaamadda">+/−</button>
+        <button class="key key--utility" type="button" data-action="backspace" aria-label="Tirtir lambarka ugu dambeeya">⌫</button>
+        <button class="key key--operator" type="button" data-operator="/" aria-label="Qaybi">÷</button>
+
+        <button class="key" type="button" data-digit="7">7</button>
+        <button class="key" type="button" data-digit="8">8</button>
+        <button class="key" type="button" data-digit="9">9</button>
+        <button class="key key--operator" type="button" data-operator="*" aria-label="Isku dhufo">×</button>
+
+        <button class="key" type="button" data-digit="4">4</button>
+        <button class="key" type="button" data-digit="5">5</button>
+        <button class="key" type="button" data-digit="6">6</button>
+        <button class="key key--operator" type="button" data-operator="-" aria-label="Kala jar">−</button>
+
+        <button class="key" type="button" data-digit="1">1</button>
+        <button class="key" type="button" data-digit="2">2</button>
+        <button class="key" type="button" data-digit="3">3</button>
+        <button class="key key--operator" type="button" data-operator="+" aria-label="Isku dar">+</button>
+
+        <button class="key key--zero" type="button" data-digit="0">0</button>
+        <button class="key" type="button" data-action="decimal" aria-label="Dhibic tobanle">.</button>
+        <button class="key key--equals" type="button" data-action="equals" aria-label="Natiijada">=</button>
+      </section>
+
+      <p class="keyboard-hint">Waxaad sidoo kale isticmaali kartaa kiiboodhka</p>
+    </main>
+  </body>
+</html>
